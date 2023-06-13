@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-amber-400">
+   <header class="text-3xl font-bold mt-2 text-center text-orange-800">Total Information Of available Products </header>
+
+  <main>
+   <section >
+      <div class="grid grid-cols-3 gap-10 w-9/12 m-auto mt-10 ">
+      <div class="bg-violet-400 p-8 text text-center rounded-lg border-2 border-slate-400 text-lg font-bold">
+         <h1>কালা জাম</h1>
+         <h1><span id="kala-jam">00</span>Kg</h1>
+      </div>
+      
+      <div class="bg-violet-400 p-8 text text-center rounded-lg border-2 border-slate-400 text-lg font-bold ">
+         <h1>New Arivel</h1>
+         <h1><span id="arivel-Box">00</span>Kg</h1>
+      </div>
+      
+      <div class="bg-violet-400 p-8 text text-center rounded-lg border-2 border-slate-400 text-lg font-bold">
+         <h1>সব মিষ্টি</h1>
+         <h1><span id="sob-misty">1000</span>Kg</h1>
+      </div>
+      
+   </div>
+
+   </section>
+
+   <section>
+      <div   class="grid grid-cols-2 gap-4 w-9/12 m-auto mt-10 ">
+      <div class="bg-violet-700 rounded-lg border-double border-slate-950 border-2">
+         <h1 class="p-2 font-bold text-lg">Sell Center</h1>
+         <input type="text" id="take-order" class=" block p-2 mb-3 ml-2 rounded-lg" placeholder="Weight">
+
+         <button class="p-1 font-bold bg-violet-400 ml-2 mb-2 rounded-lg hover:bg-amber-400" id="place-order">Order</button>
+      </div>
+      <div class="bg-violet-700 rounded-lg border-double border-slate-950 border-2">
+         <h1 class="p-2 font-bold text-lg">Store Center</h1>
+         <input type="text"  class=" block p-2 mb-3 ml-2 rounded-lg" placeholder="New arrivel" id="new-Store">
+         <button class="p-1 font-bold bg-violet-400 ml-2 mb-2 rounded-lg hover:bg-emerald-600" id="store-house">Store</button>
+      </div>
+         
+
+      </div>
+   </section>
+  </main>
+  <script src="selesdetails.js"></script>
+   
+</body>
+</html>
