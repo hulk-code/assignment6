@@ -8,6 +8,7 @@ document.getElementById('place-order').addEventListener('click',function(){
    const kalaJam=document.getElementById('kala-jam');
    const preKalajamstring=kalaJam.innerText;
    const prekalajam=parseFloat(preKalajamstring);
+   
    const totalkalajamstring= prekalajam+newOrder;
    const totalkalajam =parseFloat(totalkalajamstring);
    kalaJam.innerText=totalkalajam;
@@ -16,7 +17,7 @@ document.getElementById('place-order').addEventListener('click',function(){
    const sobMistystring=sobMisty.innerText;
    const presoblMisty=parseFloat(sobMistystring);
 
-   const totalMisty=presoblMisty- totalkalajam;
+   const totalMisty=presoblMisty- newOrder;
    sobMisty.innerText=totalMisty;
    takeOrder.value=''
 
@@ -36,7 +37,7 @@ document.getElementById('place-order').addEventListener('click',function(){
          const allMisty=document.getElementById('sob-misty');
          const preallMistystring = allMisty.innerText;
          const preallMisty=parseFloat(preallMistystring);
-         const allArival= preallMisty + totalArrival;
+         const allArival= preallMisty + store;
          allMisty.innerText=allArival;
          
 
